@@ -14,9 +14,9 @@ debug-build: ${OBJS}
 	${CC} -Wall -pedantic -ansi -std=c99 ${OPTIONS} ${INCLUDES} ${OBJS} -o Binary
 
 run:
-	make debug-build
+	@make debug-build
 	./Binary
-	make clean
+	@make clean
 
 list:
 	@echo ${shell ls}
